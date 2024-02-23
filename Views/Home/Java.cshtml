@@ -1,0 +1,178 @@
+﻿
+@{
+    ViewData["Title"] = "Java";
+}
+<script src="~/js/collapse.js"></script>
+<div class="canvas">
+ <h1> Java</h1>
+      <p>Welcome to the Java Page starting out here we have some java terms and how Cameron <br>
+      defines them in a table.</p>
+      </figure>
+      <figure>
+    <table class="Coding">
+      <thead> 
+        <tr>
+         <th>Term</th>
+         <th>Definition</th>
+        </tr>
+      </thead>
+     <tbody>
+
+        <tr>
+         <td> Class</td>
+         <td> Template used for many things such as constructors, methods, and the 4 pillars<br>
+          of object oriented programming.</td>
+        </tr>
+
+        <tr>
+            <td>Method</td>
+            <td>Manipulation tool for a application. Use it to change text to uppercase bubble sort<br>
+                and interact with a program. Examples of how I used methods include a grading scale<br>
+                 or to sort an array alphabetically. 
+             </td>
+           </tr>
+           <tr>
+            <td>Constructor</td>
+            <td>Special type of function called to create an object. It creates objects using arguments<br>
+                along with variables that have the proper scope within a class.</td>
+           </tr>
+        <tr>
+            <td>Try Catch block</td>
+            <td>Way to dictate error messages as well as print errors if you dislike debugging<br>
+             depending on the circumstance</td>
+        </tr>
+        <tr>
+            <td>Database</td>
+            <td>Organized storage with astronomical size used to hold information electronically<br>
+                or in other words a far more advanced array.</td>
+        </tr>
+        <tr>
+            <td>JavaFX</td>
+            <td>JavaFX is a tool dedicated to creating desktop applications. It uses buttons,<br>
+                labels, textboxes, and graphs. The list goes on and on and doesn't end.
+            </td>
+        </tr>
+        <tr>
+            <td>SQL</td>
+            <td>Programming language that can be integrated to Java and many other programming<br>
+            languages to provide the power of CRUD(Create Read Update Delete) to a database.</td>
+        </tr>
+        <tr>
+            <td>J2EE</td>
+            <td>Standing for Java 2 Platform, Enterprise Edition it is a tool to make desktop<br> 
+                applications just like JavaFX only much more powerful as it is used by Enterprises all<br>
+                over the world. 
+            </td>
+        </tr>
+        <tr>
+            <td>Apache Tomcat</td>
+            <td>Java HTTP web server used in conjuction with J2EE.</td>
+        </tr>      
+        <tr>
+            <td>Threads</td>
+            <td>Way to manipulate how a program is executed.<br>
+                You can make the thread sleep among a host of many other features.</td>
+        </tr>
+        <tr>
+          <td>JDBC</td>
+          <td>Java Database Connectivity is a tool that java uses to connect to a Database<br>
+             and interact with it in a multitude of ways.
+          </td>
+        </tr>
+     </tbody>
+    </table>
+
+    <p>This moving forward concludes the java table. Moving forward we have documentation on my JDBC<br>
+       In college I learned how JDBC works and how you can use it manipulate a database using SQL.<br> 
+       Down below I have some code I typed in eclipse using JDBC and one of its many functions.<br> 
+    </p>
+  </figure>
+    <main>
+      <figure>
+        <img class=".canvas" src="../Images/JDBC1.PNG"
+         <figcaption> JDBC </figcaption>
+
+      <button class="collapsible">Click here for code explanation</button>
+      <div class="content">
+        <h1> Connection Variables </h1>
+      <p>
+        Moving past the code we have here. The first part we have here I like to call the Local scope.<br> 
+        In basic terms the Local scope is where variables have the lowest amount of accessibility.<br>
+        The local scope along the top is where you will find 3 variables. These 3 variables are mandatory<br>        
+        to establish connection to the database. The url string uses an absolute path. The absolute path<br>        
+        is acquired from the file explorer. In other words the url is taken from files you create in a folder.<br>       
+        The folder given here provides access to a database that the program can add a table to without<br>     
+        touching the file. So you can program a table which is a place to store data in a database. Unfortunately<br>       
+        I cannot show you the database because I do not have access to it anymore. Access was given to me by<br>       
+        my college for free. Moving forward you will notice that the stmt and con variables both equal null.<br>        
+        Null is a word that represents nothing in the programming world. Here it needs to be nothing in order<br>        
+        for the code in the try catch block to work. When it boils down to the core we have these 3 variables<br>         
+        in the main. These variables are used to establish connection to the database inside the access app.<br>         
+        What we do in the database is explained in the next section following this one.<br>
+      </p>
+      <h1> Creating The Table</h1>
+      <p>
+        As you can see in the code the thing I have commented is Driver information. The driver is a component.<br>        
+        This component is used for java to interact with the database. Without the driver java couldn't do anything<br>        
+        to the database here. That covers everything I know about the driver. One thing you will notice is that all<br>         
+        this code is inside a try catch block. The reason for this is mostly preference. The try catch block provides<br>       
+        me comfort if I ever do make an error. Sometimes debugging for me can be unclear which is why I prefer the try<br>       
+        catch block. Up next you will notice that con is used in combination with DriverManager and getConnection.<br>       
+        Within the comments near con you will notice that this is the connection variable. it connects by linking<br>        
+        to the 2 variables connected to the database. Those variables you create inside of access. Here those variables<br>
+        are username and password. But then there is also the url string. This brings the computer to the correct folder<br>
+        in your files to find a match. The files need to be there otherwise the database connection would never work.<br>
+        Which is why it's important to have the correct file path. This explains everything I know about establishing<br>
+        connection inside JDBC. After the connection we have a string named SQL. SQL is a language we use to interact<br>
+        with a database. More details on SQL in the SQL documentation area. All you need to know is that this is how an <br>
+        sql statement is coded with JDBC. You will notice the statement says create table. This statement is responsible<br>
+        for creating the table in the access database it uses. The table is a database object that contain all the data<br>
+        in the database. Depending on how much data you need to store you can have any number of tables in your database.<br>
+        The last 2 statements are basically self explanatory. The first one puts the sql statement into the database. It used<br>
+        the 2 strings we created for the database. The next statement is basically verification that it worked if it doesn't <br>        
+        work thats where the try catch block comes in.    
+      </p>
+    </div>
+    <p><br>
+     As for my next code example we have a chart I programmed using Java FX. See the code below.<br>
+     Note: I put the code into multiple images as I am  unaware of how I can fit it all into one image.<br>
+    </p>
+     <img src="../Images/ChartImg1.PNG">
+     <img src="../Images/CImg2.PNG">
+     <button class="collapsible">Click here for code explanation</button>
+      <div class="content">
+
+     <h1>Using data from JDBC database</h1>
+     <p>
+       As you can tell this code also uses JDBC. If you need an explanation on JDBC I recommend you look<br> 
+       at the last examples button. Long story short this establishes connection. We use the connection to<br>
+       acquire information for the chart. The database holds the data that goes into the chart. In order<br>
+       for the program to do that it establishes connection early on. This is needed so we can acquire our<br>
+       data through the SQL select statement.<br>
+     </p>
+     <h1>Making the chart</h1>
+        <p>
+        Moving forward we have making the chart. This is a lot easier said than done. The first thing we do<br>
+        is create 3 different kinds of variables part of the chart.These veriables are CategoryAxis, NumberAxis<br>
+        and the barchart. Category axis or if you know math is named X Axis as defined by the variable. Then we<br> 
+        make the NumberAxis AKA the Y-Axis. Lastly we make the BarChart. All of these variables are part of the<br>
+        core creation of the chart. There are other charts you can make but this example focuses on one of them<br>
+        As the code suggests the plugs in the x and y axis variable to establish the details of the chart. Line<br>
+        55 establishes the variable we use to put our data into the Series. As you recall earlier we acquired<br>
+        our data through the SQL select statement. This data is held in the rst or the resultSet. the resultSet<br> 
+        pushes the data into 2 different arraylists. For our next piece of code we have the for loop. This for<br>
+        loop is used to push all the data into the dataseries. The dataseries takes the data from the 2 different<br>
+        Arraylists we created from before. Once all the data is put into the dataseries we move it into the<br>
+        barchart. Barchart takes the data by using the built in method of getData and Add. We use add to move <br>
+        dataseries1 into the barchart. After this we set the scene and put the barchart into the scene.You can<br>
+        see the result below this long explanation.     
+        </p>
+     </div>
+     <h1>Result</h1>
+     <img src="../Images/CRes.PNG">
+    </figure>
+  </main>
+
+
+</div>
+

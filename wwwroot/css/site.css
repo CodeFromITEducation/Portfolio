@@ -1,0 +1,169 @@
+/*Elements*/
+h1 {
+    font-family: SpaceGrotesk-Light;
+    color: black;
+    line-height: 1.2;
+    font-weight: 500;
+    font-size: 64px;
+    margin-bottom: 40px;
+}
+
+img .c {
+    align-items: center;
+}
+
+nav ul {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 40px;
+    border-top: 4px double rgb(57, 44, 28);
+    border-bottom: 4px double rgb(57, 44, 28);
+}
+
+    nav ul li {
+        -webkit-flex: 0 1 80px;
+        flex: 0 1 80px;
+        margin: 10px;
+    }
+
+        nav ul li a {
+            color: rgb(57, 44, 28);
+            display: block;
+            font-size: 1.2em;
+            text-align: center;
+            padding: 50% 0%;
+            font-variant: small-caps;
+        }
+p {
+    line-height: 1.5em;
+    margin: 0;
+    font-family: 'Lato';
+    font-size: 24px;
+}
+
+body {
+    overflow: auto;
+    width:fit-content
+}
+
+article {
+    text-align: justify;
+    width: fit-content;
+    border-width: 40%;
+    padding-left: 20px;
+}
+
+
+table.Coding {
+    background: black;
+    outline: 1px solid red;
+    border: 10px outset rgb(31, 31, 31);
+    color: white;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+    table.Coding caption {
+        background-color: black;
+        color: white;
+        outline: 1px solid red;
+        border: 10px outset rgb(31, 31, 31);
+    }
+
+    table.Coding th, table.Coding td {
+        border: 1px solid red;
+        padding: 5px;
+        vertical-align: top;
+        font-size: 1.5em;
+    }
+
+body table.Coding tr {
+    background-color: rgb(31,31,31);
+    font-size: .6em;
+}
+
+table.Coding thead {
+    background-color: rgb(31, 31, 31);
+    color: white;
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+}
+
+    table.Coding thead tr {
+        height: 20px;
+        width: 70%;
+    }
+
+table.Coding tbody tr {
+    height: 10px;
+    background-color: rgb(31, 31, 31);
+    color: white;
+    font-family: 'Times New Roman';
+}
+
+table.Coding tfoot {
+    background: black;
+    color: white;
+}
+
+figcaption {
+    text-align: center;
+    padding-top: 5px;
+    font-size: .9em;
+    font-style: italic;
+}
+
+
+/*Collapse code*/
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+/*Canvas code*/
+.canvas {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to bottom, #edfffa 0%, #31c5d6 100%);
+    position: relative;
+    overflow: auto;
+}
+
+.bubble {
+    display: block;
+    border-radius: 50%;
+    opacity: 0.8;
+    position: absolute;
+    bottom: -150px; /* Start off screen */
+    background: radial-gradient(ellipse at center, #b8c6c6 0%, #30b3d3 46%, #20628c 100%);
+    animation: floatBubble infinite;
+}
+
+@keyframes floatBubble {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(-50vh); /* You can adjust this value */
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateY(-100vh); /* Move off the top of the screen */
+        opacity: 0;
+    }
+}
