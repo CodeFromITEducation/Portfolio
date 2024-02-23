@@ -15,7 +15,7 @@ COPY ["Portfolio.csproj", "."]
 RUN dotnet restore "./Portfolio.csproj"
 COPY . .
 WORKDIR "/src/."
-RUN dotnet build "./Portfolio.csproj" -c %BUILD_CONFIGURATION% -o /app/build
+RUN dotnet build "Portfolio.csproj" -c %BUILD_CONFIGURATION% -o /app/build
 
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
