@@ -23,7 +23,7 @@ jobs:
         password: ${{ secrets.DOCKER_HUB_PASSWORD }}
 
     - name: Push image to Docker Hub
-      run: docker push dockingincsharp/my-image-name:${{ github.run_id }}
+      run: docker push dockingincsharp/portfolio:dev
 
     - name: Deploy to Heroku
       if: github.ref == 'refs/heads/master' && github.event_name == 'push'
