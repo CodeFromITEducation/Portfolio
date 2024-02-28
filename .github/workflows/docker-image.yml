@@ -21,12 +21,7 @@ jobs:
       with:
         username: ${{ secrets.DOCKER_HUB_USERNAME }}
         password: ${{ secrets.DOCKER_HUB_PASSWORD }}
-  
-    - name: Tag Docker Image
-      run: docker tag portfolio:dev dockingincsharp/portfolio:dev
-
-    - name: Push Docker Image to Docker Hub
-      run: docker push dockingincsharp/portfolio:dev
+        
     - name: Deploy to Heroku
       if: github.ref == 'refs/heads/master' && github.event_name == 'push'
       run: |
