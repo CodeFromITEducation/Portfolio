@@ -1,8 +1,8 @@
-﻿
+
 @{
     ViewData["Title"] = "CSharp";
 }
-<script src="~/js/collapse.js"></script>
+
 <div class='canvas'>
   <figure>
     <h1> C#</h1>
@@ -48,7 +48,7 @@
           <tr>
               <td>ASP .Net MVC</td>
               <td>This is a application framework. MVC stands for Model, View, Controller<br>
-              This framework is a way to simplify complexity to a program. Words can barely<br>
+              This framework is a way to simplify complexity to a web application. Words can barely<br>
               begin to describe how powerful the control it brings to a web application.
               </td>
           </tr>
@@ -72,7 +72,7 @@
           <tr>
               <td>Span</td>
               <td>Very complex array that can point to a multitude of memories.<br>
-                  .</td>
+      </td>
           </tr>
           <tr>
             <td>Reflection</td>
@@ -81,17 +81,18 @@
           </tr>
        </tbody>
       </table>
+
       <figure>
       <p>This concludes the C# terminology table. Moving forward we have documentation on my DB2Crud<br>
         project I created on a cloudserver using the deathstar.gtc.edu database provided by my college.<br>
-        This program does not show a end result as I do not have access to the database anymore.</p>
+        This program does not show a end result as I do not have access to the database anymore.</p><br>
 
         <img src="~/Images/DatagridForm.png">
         <button class="collapsible">Click here for code explanation</button>
         <div class="content">
         <p> This image presents what I like to call the datagrid. The datagrid is used to carry out all<br>
       CRUD operations. These include Create, Read, Update, and Delete for a database.</p>
-      <br /><img src='~/Images/GridCode.PNG'>
+      <br><img src='~/Images/GridCode.PNG'>
 
       <p>This is the code behind the datagrid. Within the first line of code you will notice a binding<br>
       source. The binding source is used to establish a connection to a database. The database in this<br>
@@ -104,26 +105,22 @@
       is why the 2 strings come in. The command builder is needed to make commands function properly <br>
       from inside the program. It is the reason the sql string functions properly. Next you see a table.<br>
       This table is used to fill in the data adapter on what the sql string is trying to do. <br>
-      Plus it is used to provide the instance of data to the binding source.</p>
-      </div>
+      Plus it is used to provide the instance of data to the binding source.</p></div>
       <img src='~/Images/GridCode2.PNG'>
       <button class="collapsible">Click here for code explanation</button>
-      <div class="content">
-      <p>
+      <div class="content"><p>
         These last 2 areas of code serve to update the table after a Crud operation is carried out.<br> 
         Also to catch any errors you may encounter in the coding process. Errors display in the textbox.<br>
-        Moving forward next we have all 4 CRUD operations. <br>
-      </p>
-      </div>
+        Moving forward next we have all 4 CRUD operations.</p><br></div>
       <img src="~/Images/CrudForm.PNG">
       <button class="collapsible">Click here for code explanation</button>
       <div class="content">
-      <p> What we have here is a form dedicated to 3 of cruds operations. Each button you push<br>
+      <p>What we have here is a form dedicated to all 4 of cruds operations. Each button you push<br>
         in this program will carry out the operation it is labeled as. whether it be create read update or delete.<br>
         Just to not get confused read is display. This application will do all of them. Moving on from the form there <br>
         is the code that carry's out these tasks behind it.
       </p>
-      </div>
+      </div><br>
       <img src="~/Images/b1dsp.PNG">
       <button class="collapsible">Click here for code explanation</button>
       <div class="content">
@@ -152,7 +149,7 @@
       derive parameters. This makes it so we can add data into the table's parameters. After this in the next 3 <br>
       lines is where we input the values into the parameters. This code basically adds in a id description and length<br>
       in the table BOAT_TYPE2.   
-     </p>
+     </p><br>
      </div>
      <img src="~/Images/b3upd.PNG">
      <button class="collapsible">Click here for code explanation</button>
@@ -177,17 +174,20 @@
 
       <p>For a second project I have a Windows Forms Application that uses a SQLITE database to manage a diary.<br>
          This windows forms application also runs the output of a console application to manage the Edits and<br>
-         deletes. You can see how the program functions via the buttons below if you cloned this off github<br>
-         here are the associated files you need to make this work.      
+         deletes. You can see a showcase of the program via the video below<br>
       </p>
-
-        @using (Html.BeginForm("Diary", "Home", FormMethod.Post))
-        {
-        <input type="submit" value="Run Diary App" />
-        }
+   <video width="720" height="400" controls>
+  <source src="~/Video/ConsoleOutput.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<br>
+<video width="720" height="400" controls>
+  <source src="~/Video/FormOutput.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
       <p>
           As you can see from the video we have a program that uses CRUD to manage a diary. Not <br>
-          only that we have a console application attached to the same program that presents a<br>
+          not only that we have a console application attached to the same program that presents a<br>
           alternate way to handle the edits and deletes via a button click event. Moving on from <br>
           the showcase of the output we have the code explained via images once again.</p>
       <img src="~/Images/D1.PNG">
@@ -202,11 +202,136 @@
           pulls from a separate program that I created a database to manage quotes. This variable takes the<br>
           database from the absolute file path. Continuing to CreateDiaryTable. This method creates the table inside<br>
           of QuoteData. Which is done via the create table command. The table holds 2 variables EntryID and Entry.<br>
-          EntryID serves as the pages which is handled in the single line textbox from the output of the form or<br>
+          EntryID serves as the pages which is handled in the single line textbox from the form or<br>
           if you are using the console application it is handled by Console.Readline() and user input.<br>
-          <br><br><br><br><br><br>
-        </p>    
+          The next 4 lines are simple the first one creates the command. The second line opens the connection<br>
+          and the third line executes the command to create the table. The fourth line closes the connection.<br>
+          </p>    
       </div>
+      <img src="~/Images/D2.PNG">
+      <button class="collapsible">Click here for code explanation</button>
+      <div class="content">
+          <p>
+              The code you are looking at here is a method that handles the button click event for <br>
+              creating diary entries looking at the top of the method you would notice that it takes<br>
+              2 textbox parameters. The ID is to specify which page your writing on. Entry is for what<br>
+              you write. The first few lines in the method you can see is the declaration of an int being<br>
+              parsed into the textbox. This is to make sure the page is saved as you cannot make a textbox<br>
+              pass off as an int. After the int parsing is where you can see the insert command.<br> 
+              insert in basic terms is how you submit your entry. Into the next line you have the command<br>
+              declaration. Transitioning to the next line we connect both the textbox and integers to the<br>
+              correct variables established to the table.Ending this method we have the command executing<br>
+              as well as the clearing of the Page and entry to have a new page. <br>
+          </p></div>
+      <br> <img src="~/Images/D3.PNG">
+      <button class="collapsible">Click here for code explanation</button>
+      <div class="content">
+          <p>
+             Moving to the next method we have the EDConsole. This goes back to the kernel we created earlier<br>
+             at the beginning of the program. For the first line we are configuring the allocating the console<br>
+            This console will display the black screen you seen in the video.As for the second line we have the<br>
+            process start info. What this does is it acquires the information we need to run the separate console<br>
+             project. The code to the console I intend to show later down this page. The rest of these lines are<br>
+             simple they start the process to the console and check for errors through the if condition it reads<br>
+             as the console goes along via the outputs data it receives.<br>This concludes the EDConsole method.<br>
+             <br><br><br></p></div>
+       <br><img src="~/Images/D4.PNG">
+      <button class="collapsible">Click here for code explanation</button>
+      <div class="content">
+          <p>
+             ViewDiaryEntry is how we see the entries we have as input from the user of the program. The first line<br>
+             establishes the parameter for id. The user needs the page number in order to view the page is what that<br>
+             parameter is for. Commandtext holds the command inside a string to be added to sqlite command data type<br>
+             again. SQLiteDataReader reads the text from the select command. The command is then displayed in a message<br>
+              box. The while loop insures the whole entry is displayed. This concludes ViewDiaryEntry. 
+          </p></div>
+        <br><img src="~/Images/D5.PNG">
+      <button class="collapsible">Click here for code explanation</button>
+      <div class="content">
+          <p>
+              EditDiaryEntry is how we change the entry text without deleting the entire page. This method is very similar<br>
+              to insert the only difference here is we are using UPDATE instead of INSERT.
+          </p></div>
+          <img src="~/Images/D6.PNG">
+      <button class="collapsible">Click here for code explanation</button>
+      <div class="content">
+          <p>
+              For our final method of crud operations we have the DelDiaryEntry. Which again does not need an explanation<br>
+              as it is very similar to insert only it uses DELETE instead of INSERT.<br><br><br><br><br><br><br><br>
+          </p></div><img src="~/Images/D7.PNG"><img src="~/Images/D8.PNG">
+      <button class="collapsible">Click here for code explanation</button>
+      <div class="content">
+          <p>
+              This portion of the code is what handles the button click events in basic terms each button has a method<br> 
+              associated to it which handles the events.
+          </p></div>
+    <p>
+        Moving on from the form code we have the console code. 
+    </p>
+    <img src="~/Images/DC1.PNG">
+      <button class="collapsible">Click here for code explanation</button>
+            <div class="content">
+          <p>
+             The majority of code for the console application comes from this one class.<br>
+             which is DE abbreviation for delete edit. SQLiteConnection establishes connection<br>
+             via the absolute path you see on the equivalent to the data source. ViewID <br>
+             allows the user in the console application to see the pages that have been<br>
+             created. We do this so the user can see what will be edited. This is done with<br>
+             the sql select command. Selecting all entryIDs and displaying them with a while<br>
+             loop conditioned on the reader. This concludes everything about the viewID method<br>
+             </p></div><br>
+    <img src="~/Images/DC2.PNG">  
+         <button class="collapsible">Click here for code explanation</button>
+            <div class="content">
+          <p>UInpEntPrt is a method exclusive to the edit command. What this method does is it<br>
+              prints out the original text to the diary entry you want to edit. This is achieved<br>
+              through another select command accompanied by where to identify the id of the entry<br>
+              in basic terms the ID you see in the select command is the one the user inputs as<br>
+              indicated through the variable. The select command is then executed you may be asking<br>
+              where the opening of the connection is we will get to that later. After the commmand is<br>
+              executed we are then looping through the reader again to display the text via writeline.
+              This concludes everything about the UInpEntPrt method.<br>
+            </p></div> <br>
+
+    <img src="~/Images/DC3.PNG">  
+         <button class="collapsible">Click here for code explanation</button>
+            <div class="content">
+          <p>Edit method does what it specifies it edits the diary entry. In the first writeline the user<br>
+              is given a detailed explanation of the edit method. After the writeline we use the viewID method<br>
+              This gives the user his/her options when it comes to pages to edit. Then this is followed by<br>
+              another use of writeline. Explaining to input the page number also allowing the user to go back<br>
+              by pressing b the demng method is executed this method will be explained later. But the user will<br>
+              be able to undo the edit option by pressing b. UInpEntPrt method is then called accepting idinp<br>
+              as it's parameter. The IDinp is then converted to int as it is a string and won't work when creating<br>
+              the update command. Finishing out the edit method we prompt the user for the new edited text to the <br>
+              diary entry. The text is then stored in the string variable newText.
+            </p></div> <br>
+
+    <img src="~/Images/DC4.PNG">  
+         <button class="collapsible">Click here for code explanation</button>
+            <div class="content">
+          <p>After accepting we create a update command to handle the edits of the user<br>
+              this update command accepts the newText input and edits the associated diary entry. It edits the correct<br>
+              thanks to the where being specified by the idCVT variable. The command is then executed ending the method.<br>
+              The delete method is then created next. Similar to the edit command it starts by providing an explanation and<br>
+              calling viewID. The user is then prompted for which page they want to delete. The id is then read and is.<br>
+              provided in delete command deleting the associated entry for the user. Which is then executed.<br>
+            </p></div> <br>
+
+    <img src="~/Images/DC5.PNG">
+         <button class="collapsible">Click here for code explanation</button>
+            <div class="content">
+          <p><br>DEMng is a method used to greet the user to the console and inform the user of his options these options are handled. <br>
+              by the associated command whether it be delete or edit. The options are specified through switch case.<br>
+            </p></div> <br>
+
+    <img src="~/Images/DC6.PNG">
+         <button class="collapsible">Click here for code explanation</button>
+            <div class="content"><p>Ending the program we have a method simplifier all this does is keep the connection open for all the commands.<br>
+                this saves quite a few lines of code and this concludes every method in the console application. <br>
+                This method is then executed in the image provided below
+            </p></div><img src="~/Images/DC7.PNG">
+    
 </figure>
 
 </div>
